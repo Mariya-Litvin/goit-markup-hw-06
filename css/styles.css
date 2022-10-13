@@ -559,6 +559,53 @@ body {
   background-color: var(--accent-color-two);
 }
 
+.signup {
+  display: block;
+  margin-left: 93px;
+}
+
+.signup-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-color-light);
+  margin-bottom: 20px;
+}
+
+.signup-group {
+  display: flex;
+}
+
+.signup-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color-dark);
+}
+
+.btn-signup {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-color-light);
+  border: none;
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* Portfolio */
 
 .filter-button-item {
