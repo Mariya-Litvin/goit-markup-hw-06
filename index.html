@@ -429,10 +429,11 @@
               type="email"
               name="signup-email"
               id="signup-email"
+              placeholder="E-mail"
             />
             <button class="btn-signup" type="submit">
               Підписатися
-              <svg width="24" height="24">
+              <svg class="signup-icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -447,6 +448,30 @@
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="form">
+          <div class="form-field">
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="text" name="name" id="name" autofocus class="input-label" />
+          </div>
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="input-label" />
+          </div>
+          <div class="form-field">
+            <label for="email" class="form-label">Пошта</label>
+            <input type="email" name="email" id="email" class="input-label" />
+          </div>
+          <div class="form-field comment">
+            <label for="comment" class="form-label">Коментар</label>
+            <textarea
+              type="text"
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
