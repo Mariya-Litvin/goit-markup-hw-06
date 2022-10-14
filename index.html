@@ -452,26 +452,44 @@
         <form class="form">
           <div class="form-field">
             <label for="name" class="form-label">Ім'я</label>
-            <input type="text" name="name" id="name" autofocus class="input-label" />
+            <div class="form-icon">
+              <input type="text" name="name" id="name" autofocus class="input-label" />
+              <svg class="icon-name" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label for="tel" class="form-label">Телефон</label>
-            <input type="tel" name="tel" id="tel" class="input-label" />
+            <div class="form-icon">
+              <input type="tel" name="tel" id="tel" class="input-label" />
+              <svg class="icon-name" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label for="email" class="form-label">Пошта</label>
-            <input type="email" name="email" id="email" class="input-label" />
+            <div class="form-icon">
+              <input type="email" name="email" id="email" class="input-label" />
+              <svg class="icon-name" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field comment">
             <label for="comment" class="form-label">Коментар</label>
-            <textarea
-              type="text"
-              name="comment"
-              id="comment"
-              placeholder="Введіть текст"
-            ></textarea>
+            <textarea name="comment" id="comment" placeholder="Введіть текст"> </textarea>
           </div>
         </form>
+        <div class="checkbox-agree">
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree" class="agree-label"
+            >Погоджуюся з розсилкою та приймаю
+            <a class="agree-link" href="">Умови договору</a>
+          </label>
+        </div>
+        <button type="submit" class="btn-agree">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

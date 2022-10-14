@@ -807,7 +807,6 @@ body {
 }
 
 .form {
-  padding-bottom: 164px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -828,9 +827,21 @@ body {
 }
 
 .input-label {
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.form-icon {
+  position: relative;
+}
+
+.icon-name {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
 
 .form-field textarea {
@@ -851,4 +862,54 @@ body {
 
 .form-field.comment {
   margin-bottom: 0px;
+}
+
+.checkbox-agree {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.agree-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-color-font);
+  margin-left: 8px;
+}
+
+.agree-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: underline;
+  color: var(--accent-color-two);
+  text-underline-offset: 3px;
+}
+
+.btn-agree {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  margin: 0 auto;
+  min-width: 200px;
+  height: 50px;
+  color: var(--main-color-light);
+  background: var(--accent-color-two);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.btn-agree:hover,
+.btn-agree:focus {
+  background: var(--hover-focus-color);
 }
