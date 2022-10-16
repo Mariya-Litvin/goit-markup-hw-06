@@ -587,6 +587,7 @@ body {
   background-color: var(--background-color-dark);
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .signup-email::placeholder {
@@ -617,9 +618,11 @@ body {
   min-width: 200px;
   height: 50px;
   margin-left: 12px;
-  background: #2196f3;
+  background-color: var(--accent-color-two);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .signup-icon {
@@ -629,7 +632,7 @@ body {
 
 .btn-signup:hover,
 .btn-signup:focus {
-  color: var(--main-color-light);
+  background-color: var(--hover-focus-color);
 }
 
 /* Portfolio */
@@ -649,7 +652,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color-one);
-  background: var(--background-color-team);
+  background-color: var(--background-color-team);
   border-radius: 4px;
   border: transparent;
   padding: 6px 22px;
@@ -835,6 +838,7 @@ body {
   border-radius: 4px;
   outline: none;
   padding: 12px 42px;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .form-icon {
@@ -846,6 +850,7 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .input-label:focus {
@@ -857,12 +862,14 @@ body {
 }
 
 .comment-textarea {
+  position: relative;
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 17px 16px 12px;
   outline: none;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .comment-textarea:focus {
@@ -870,6 +877,9 @@ body {
 }
 
 .form-field textarea::placeholder {
+  position: absolute;
+  top: 25px;
+  left: 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17px;
@@ -883,26 +893,62 @@ body {
 
 .checkbox-agree {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
 
 .agree-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agree-text {
+  margin-left: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-color-font);
-  margin-left: 8px;
 }
 
 .agree-link {
+  margin-left: 4px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-decoration-line: underline;
   color: var(--accent-color-two);
   text-underline-offset: 3px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon-checkbox {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-color-light);
+  border-radius: 2px;
+  border: 2px solid var(--accent-color-one);
+  fill: transparent;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-color-two);
+  border-color: var(--accent-color-two);
 }
 
 .btn-agree {
@@ -920,13 +966,15 @@ body {
   min-width: 200px;
   height: 50px;
   color: var(--main-color-light);
-  background: var(--accent-color-two);
+  background-color: var(--accent-color-two);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 30px;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .btn-agree:hover,
 .btn-agree:focus {
-  background: var(--hover-focus-color);
+  background-color: var(--hover-focus-color);
 }
