@@ -561,7 +561,7 @@ body {
 
 .signup {
   display: block;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .signup-title {
@@ -758,6 +758,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   min-height: 581px;
   min-width: 528px;
   background-color: var(--main-color-light);
@@ -805,15 +806,7 @@ body {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
   margin-bottom: 12px;
-}
-
-.form {
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .form-field {
