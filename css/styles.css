@@ -926,6 +926,10 @@ body {
   overflow: hidden;
 }
 
+.checkbox:focus + .icon-checkbox {
+  border-color: var(--accent-color-one);
+}
+
 .icon-checkbox {
   display: flex;
   align-items: center;
